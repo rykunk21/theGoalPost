@@ -37,7 +37,7 @@ def getTable(link):
         return True
     
     fp = requests.get(link) 
-    soup = BeautifulSoup(fp, 'html.parser')
+    soup = BeautifulSoup(fp.text, 'html.parser')
     table = soup.find(id='div_sgl-basic').table.tbody
 
     dataTable = []
