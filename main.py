@@ -26,7 +26,7 @@ def getRange(id):
     return links
 
 
-def getTable():
+def getTable(link):
 
     def parseLine(line):
         for i, entry in enumerate(line[5:]):
@@ -36,7 +36,7 @@ def getTable():
                 return False
         return True
     
-    fp = open('az.txt', 'r') 
+    fp = requests.get(link) 
     soup = BeautifulSoup(fp, 'html.parser')
     table = soup.find(id='div_sgl-basic').table.tbody
 
