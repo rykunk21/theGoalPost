@@ -61,7 +61,7 @@ def getTable():
 def scrape():
 
     id = int(input('Enter the ID of this machine: '))
-    links = getRange()
+    links = getRange(id)
 
     with open(f'./resources/scores({id}).csv', 'w', newline='') as fp:
         writer = csv.writer(fp)
