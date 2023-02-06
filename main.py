@@ -38,6 +38,7 @@ def getTable(link):
     
     fp = requests.get(link) 
     soup = BeautifulSoup(fp.text, 'html.parser')
+
     table = soup.find(id='div_sgl-basic').table.tbody
 
     dataTable = []
@@ -71,6 +72,7 @@ def scrape():
             req = requests.get(link)
             if req.ok:
                 print(f'WROTE TEAM {i} TO CSV')
+                print('')
                 table = getTable(link)
                 for row in table:
                     writer.writerow([teamName] + row)

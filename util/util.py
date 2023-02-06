@@ -12,6 +12,10 @@ class Preprocessor:
     """
     Preprocessor object
     """
-    pass
+    def __init__(self) -> None:
+        pass
 
+class Scraper:
+    def __init__(self) -> None:
+        pass
 
