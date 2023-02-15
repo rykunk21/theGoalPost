@@ -1,4 +1,4 @@
-# The goal post
+# The Goal Post
 
 This application allows users to make sports bets through an AI model on Discord. The bot utilizes state-of-the-art machine learning algorithms to provide users with the best betting predictions and odds for a variety of sports events.
 
