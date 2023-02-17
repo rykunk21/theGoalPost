@@ -14,6 +14,9 @@ header = [
     'OPP_BLK', 'OPP_TOV', 'OPP_PF'
 ]
 
+def test():
+    print('This is a successful test!')
+
 def getRange(id):
 
     with open('links.txt', 'r') as fp:

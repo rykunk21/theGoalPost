@@ -1,4 +1,6 @@
 import copy
+import csv
+import unittest
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,5 +12,5 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.exceptions import NotFittedError
 import requests
 from bs4 import BeautifulSoup
-import csv
+
 

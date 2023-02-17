@@ -1,5 +1,5 @@
-from models.util.dependencies import *
-from models.util.model import Model
+from src.util.dependencies import *
+from src.util.model import Model
 
 class NCAABModel(Model):
 

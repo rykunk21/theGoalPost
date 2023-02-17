@@ -1,4 +1,4 @@
-from dependencies import *
+from .dependencies import *
 
 
 class DataManager:
